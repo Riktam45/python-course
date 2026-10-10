@@ -1,4 +1,7 @@
-#An escape character is a backslash \ followed by the character you want to insert.
+# An escape sequence is a sequence of characters that starts with a backslash (\) 
+# followed by a specific character or numbers. 
+# It tells Python to treat that part of the string as a special character (like a tab or newline) 
+# or as a literal text shortcut instead of its normal meaning
 
 txt = "We are the so-called \"Vikings\" from the north."
 print(txt)                                   # \"" -- double quote

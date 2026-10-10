@@ -4,4 +4,4 @@
 
 txt = "RikustoMadika"
 print(txt[::-1])    #[start : stop : step]
-print(txt[8:2:-2])  #here print the value with 1 step jump because i put -2
+print(txt[8:2:-2])  # here print the value with 1 step jump because i put -2

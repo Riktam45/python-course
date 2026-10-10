@@ -1,3 +1,8 @@
+# Built-in Data Types
+# In programming, data type is an important concept.
+# Variables can store data of different types, and different types can do different things.
+# Python has the following data types built-in by default, in these categories:
+
 x1 = 3
 x2 = "Riktam"
 x3 = 3.5
