@@ -49,3 +49,22 @@ python-course/
 ├── PYTHON PROGRAMMING.pdf   # Companion reference notes
 ├── Python-OOP.pdf          # OOP concepts reference guide
 └── README.md               # Repository documentation
+
+# Topics Covered
+1. Python Basics & Syntax: Variables, Data Types, Output, Comments & Indentation
+2. Strings & Operations: Slicing, Methods, Concatenation, Formatting & Escape Characters
+3. Data Structures:
+  - Lists: Indexing, Methods, Sorting, Comprehensions
+  - Tuples: Accessing, Updating, Unpacking
+  - Sets: Methods, Add/Remove, Set Operations
+  - Dictionaries: Key-Value Access, Methods, Nested Dictionaries
+4. Control Flow:
+  - if / elif / else Conditional Logic
+  - match-case Statements
+  - while & for Loops
+5. Functions & Logic: Parameters, Arguments (*args, **kwargs), Scope & Recursion
+6. Object-Oriented Programming (OOP):
+  - Classes & Objects
+  - Constructors (__init__)
+  - Inheritance, Polymorphism, Encapsulation & Inner Classes
+7. Error Handling & Input: Exception Handling (try / except), User Input
