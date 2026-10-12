@@ -1,0 +1,4 @@
+This line is added through write method!!Another line is added through write() methodNow this line is added through append method
+First Line
+Second Line
+Third Line
