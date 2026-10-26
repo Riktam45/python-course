@@ -25,3 +25,9 @@ print(elements[-6:-2])            #accessing items from the second item to the s
 #Negative indexing means starting from the end of the list.
 #This example returns the items from index -4 (included) to index -1 (excluded)
 #Remember that the last item has the index -1,
+
+# Accessing Nested List
+# If a list contains other lists, use multiple sets of square brackets to drill down into the sub-lists.
+matrix = [[1, 2, 3], [4, 5, 6]]
+print(matrix[0])        # whole inner list
+print(matrix[1][0])     # accessing the inner list element
