@@ -3,7 +3,7 @@ tuple1 = ("plate", "cup", "bowl","spoon", "fork", "knife")
 print(tuple1[4])
 
 # negetive indexing 
-tuple2 = ("plate", "cup", "bowl","spoon", "fork", "knife")
+tuple2 = ("plate", "cup", "bowl","spoon", "fork", "knife")  # in negative last element (most rightest) is '-1' 
 print(tuple2[-3])
 
 # range of indexes
@@ -23,3 +23,10 @@ print(tuple5[:4])
 # it will end at the last element of the tuple
 tuple6 = ("plate", "cup", "bowl","spoon", "fork", "knife")
 print(tuple6[5:])  # from index 2 to the end of the tuple
+
+# Looping / iteration
+fruits = ("apple", "banana", "cherry")
+for fruit in fruits:
+    print(fruit)
+for index, fruit in enumerate(fruits):  # Loop with index tracking
+    print(f"Index {index}: {fruit}")
