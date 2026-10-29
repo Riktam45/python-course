@@ -25,3 +25,7 @@ thisset4 = set(("bus"))  # note the double round-brackets
 print(thisset4)  # will show {'b', 'u', 's'} as it is a string and will convert it to a set of characters.
 thisset5 = set(("bus", "car", "bike"))  # note the double round-brackets
 print(thisset5)  # will show {'bus', 'car', 'bike'} as it is a set of strings.  
+
+# creating a empty set
+ex_set = set()
+print(type(ex_set))
