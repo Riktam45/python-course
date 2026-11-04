@@ -15,7 +15,7 @@ print(buddy.name)     # Output: Buddy
 
 
 # code number 2 with class variable, accessing the class variables, modifying the class variables
-class Car:    
+class Car:
     car_segment = "Muscle"  # <-- Class Variable (Shared by all)
 
     def __init__(self, name):
@@ -37,8 +37,6 @@ print(f"Car 2's segment: {car2.car_segment}")  # Output: Muscle
 print("\n--- 2. Modifying via Class Name ---")
 Car.car_segment = "Sports Car"  # This changes the class variable for all instances
 print(f"Class level segment: {Car.car_segment}")  # Output: Sports Car
-
-print(f"Class level segment: {Car.car_segment}")  # Output: Sports Car
 print(f"Car 1's segment: {car1.car_segment}")  # Output: Sports Car
 print(f"Car 2's segment: {car2.car_segment}")  # Output: Sports Car
 
@@ -47,9 +45,5 @@ print("\n--- 3. Modifying via Instance ---")
 # This ONLY changes it for car1, creating a unique instance variable
 car1.car_segment = "Luxury Car"  # This creates a new instance variable for car1
 print(f"Car 1's segment: {car1.car_segment}")  # Output: Luxury Car
-print(f"Car 2's segment: {car2.car_segment}")  # Output: Sports   Car (Unchanged)
+print(f"Car 2's segment: {car2.car_segment}")  # Output: Sports Car (Unchanged)
 
-print(f"Car 1's segment: {car1.car_segment}")  # Output: Luxury Car
-print(f"Car 2's segment: {car2.car_segment}")  # Output: Sports Car
-
-print(f"Class level segment: {Car.car_segment}")  # Output: Sports Car
