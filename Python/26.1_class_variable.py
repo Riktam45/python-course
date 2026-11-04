@@ -14,8 +14,8 @@ print(buddy.species)  # Output: Canine
 print(buddy.name)     # Output: Buddy
 
 
-
-class Car:
+# code number 2 with class variable, accessing the class variables, modifying the class variables
+class Car:    
     car_segment = "Muscle"  # <-- Class Variable (Shared by all)
 
     def __init__(self, name):
