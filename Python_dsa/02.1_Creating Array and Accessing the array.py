@@ -25,3 +25,11 @@ print("Accessing the first element of the 1D array: ", my_np_array_1d[2])    # p
 print("Accessing the last element of the 1D array: ", my_np_array_1d[-1])    # Negative Indexing
 print("Accessing the first element of the 2D array: ", my_np_array_2d[0, 1])    # positive indexing
 print("Accessing the last element of the 2D array: ", my_np_array_2d[-1, -1])    # Negative Indexing
+print("Sliced 2D array: ", my_np_array_2d[0:2, 1:3])                           # Multidimensional slicing
+
+
+# The general syntax for each dimension is [start:stop:step]
+# for 2d array the syntax is [row_start:row_stop:row_step, col_start:col_stop:col_step]
+# for 3d array the syntax is [dim1_start:dim1_stop:dim1_step, dim2_start:dim2_stop:dim2_step, dim3_start:dim3_stop:dim3_step]
+
+# [row, column]
