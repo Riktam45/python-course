@@ -17,8 +17,9 @@ print("Updated 1D array elements are: ", my_np_array_1d)
 print("Updated 2D array elements are: ", my_np_array_2d)
 
     # Slice Assignment: Update a whole subset or a full axis simultaneously.
-my_np_array_1d[1:4] = [10, 20, 30]          # Update values from index 1 to 3
+my_np_array_1d[1:4] = [1, 2, 3]          # Update values from index 1 to 3
 my_np_array_2d[:, 0] = [100, 200, 300]      # Update the first column of the 2D array
+my_np_array_2d[:, 2] = [10, 20, 30]      # Update the last column of the 2D array
 my_np_array_2d[2, 1] = 20                   # Update the value at row 2, column 1
 print("Updated 1D array elements after slicing are: ", my_np_array_1d)
 print("Updated 2D array elements after slicing are: ", my_np_array_2d)
@@ -30,8 +31,29 @@ print("Updated 2D array elements after slicing are: ", my_np_array_2d)
 # B. Structural Alterations (Returns a New Array)
     # Appending: Append elements to the end
 my_np_array_1d = np.append(my_np_array_1d, [40, 50])
-my_np_array_2d = np.append(my_np_array_2d, [[10, 20, 30]], axis=0)  # Append a new row to the 2D array  
+      # Append a new row to the 2D array  
 print("1D array after appending: ", my_np_array_1d)
 print("2D array after appending: ", my_np_array_2d)
 
+    # Inserting: Insert elements at a specific index
+my_np_array_1d = np.insert(my_np_array_1d, 2, [15, 25])  # Insert values at index 2
+my_np_array_2d = np.insert(my_np_array_2d, 1, [[10, 20, 30]], axis=0)  # Insert a new row at index 1
+print("1D array after inserting: ", my_np_array_1d)
+print("2D array after inserting: ", my_np_array_2d)
+
+""" 
+axis=0: Tells NumPy to insert this data horizontally as a row, pushing the existing row at index 1 
+ 1. For a 2D Array (Rows and Columns)
+ • Use axis=0 to insert a row.
+ • Use axis=1 to insert a column.
+
+ 2. For a 3D Array (Depth, Rows, Columns)
+ • axis=0: Inserts a whole new 2D matrix/slice along the depth.
+ • axis=1: Inserts a new row across all slices.
+ • axis=2: Inserts a new column across all slices.
+
+ instead of 1d (flattened array) every dth array need the axis parameter otherwise it raises a value error.
+"""
+
+    
  
