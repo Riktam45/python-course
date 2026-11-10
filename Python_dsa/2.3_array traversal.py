@@ -10,15 +10,24 @@ import array as arr
 my_array = arr.array("i",[1, 2, 3, 4, 5])
 print("Direct element traversal:")
 for element in my_array:
-    print(element, end=" ")     # Setting end="" removes any spacing or newlines entirely
+    print(element)     # Setting end="" removes any spacing or newlines entirely
 
     # 2. Index-Based Traversal: Using a for loop with the range() function to access elements by their index.
 print("Index-based traversal:")
-for i in range(len(my_array)):
+for i in range(len(my_array)):      
     print(f"Element at index {i}: {my_array[i]}")
-# 3. While Loop Traversal: Using a while loop to traverse the array until a certain condition is met.
+# The len() function counts the total number of items in array.
+# The range() function creates a sequence of numbers starting from 0 up to (but not including) the number given it.
+
+
+    # 3. While Loop Traversal: Using a while loop to traverse the array until a certain condition is met.
 print("While loop traversal:")
 i = 0
 while i < len(my_array):
     print(f"Element at index {i}: {my_array[i]}")
     i += 1
+
+    # 4. Reverse Traversal: Using a for loop or while loop to traverse the array in reverse order.
+print("Reverse traversal:")
+for x in my_array[::-1]:
+    print(x) 

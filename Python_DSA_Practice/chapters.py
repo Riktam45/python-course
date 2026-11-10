@@ -2,15 +2,15 @@
 LEVEL 1 — Basic Data Structures and Algorithms
 Beginner → Intermediate
 Module	Topics
-09	Arrays and Lists
-10	Strings and String Algorithms
-11	Searching Algorithms
-12	Sorting Algorithms
-13	Hashing: Dictionary and Set
-14	Two Pointers
-15	Sliding Window
-16	Prefix Sum
-17	Matrix and 2D Arrays
+09	Arrays and Lists--------------------------------------- Complete
+10	Strings and String Algorithms-------------------------- Complete
+11	Searching Algorithms----------------------------------- Complete
+12	Sorting Algorithms-------------------------------------
+13	Hashing: Dictionary and Set----------------------------
+14	Two Pointers-------------------------------------------
+15	Sliding Window-----------------------------------------
+16	Prefix Sum---------------------------------------------
+17	Matrix and 2D Arrays-----------------------------------
 
 Important algorithms:
 - Linear Search
@@ -25,7 +25,7 @@ Important algorithms:
 """
 
 """
-LEVEL 2 — Intermediate Data Structures and Algorithms
+LEVEL 2 — Intermediate Data Structures and Algorithms-------
 Intermediate
 Module	Topics
 18	Linked Lists
