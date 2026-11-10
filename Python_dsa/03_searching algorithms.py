@@ -14,6 +14,7 @@ Some of the most commonly used searching algorithms include:
     This algorithm is used on sorted collections. It repeatedly divides the search interval in half, 
     checking the middle element and narrowing down the search range based on comparisons. 
     It has a time complexity of O(log n).
+    Remenber Binary search is work on sorted list
 """
 
 """
