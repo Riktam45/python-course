@@ -10,7 +10,9 @@ In Python, sorting is divided into two primary approaches:
         algorithm that combines Merge Sort and Insertion Sort.
 
     2. Standard DSA Sorting Algorithms:
-
+        Bubble sort, Insertion sort, Selection sort, Merge sort, Quick sort
+        They are generally evaluated by their Time Complexity (how execution time scales) and 
+        Space Complexity (extra memory required)
 """
 
 # 1. Built-in Sorting Techniques
