@@ -6,7 +6,7 @@ Module	Topics
 10	Strings and String Algorithms-------------------------- Complete
 11	Searching Algorithms----------------------------------- Complete
 12	Sorting Algorithms------------------------------------- Complete
-13	Hashing: Dictionary and Set---------------------------- 
+13	Hashing: Dictionary and Set---------------------------- Complete
 14	Two Pointers-------------------------------------------
 15	Sliding Window-----------------------------------------
 16	Prefix Sum---------------------------------------------
