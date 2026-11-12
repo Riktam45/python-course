@@ -14,6 +14,17 @@ numbers = [324,43,42,13,5,672,74,23]
 bubble_sort(numbers)
 print(numbers)
 
+
+# without function 
+mylist = [324,43,42,13,5,672,74,23] 
+n = len(mylist)
+for i in range(n-1):
+  for j in range(n-i-1):
+    if mylist[j] > mylist[j+1]:
+      mylist[j], mylist[j+1] = mylist[j+1], mylist[j]
+print(mylist)
+
+
 # b. Modified Bubble sort
 
 def modified_bubble_sort(arr):
@@ -31,6 +42,20 @@ numbers = [64, 34, 25, 12, 22, 11, 90]
 print("Original list:", numbers)
 modified_bubble_sort(numbers)
 print("Sorted list:", numbers)
+
+
+# Without function
+mylist = [64, 34, 25, 12, 22, 11, 90]
+n = len(mylist)
+for i in range(n-1):
+  swapped = False
+  for j in range(n-i-1):
+    if mylist[j] > mylist[j+1]:
+      mylist[j], mylist[j+1] = mylist[j+1], mylist[j]
+      swapped = True
+  if not swapped:
+    break
+print(mylist)
 
 """
 1. Function Setup

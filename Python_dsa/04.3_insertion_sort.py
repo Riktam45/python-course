@@ -4,13 +4,18 @@
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
-        j = i - 1
-        while j >= 0 and key < arr[j]:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = key
+        # Move backwards through the sorted portion of the list
+        for j in range(i - 1, -1, -1):
+            if arr[j] > key:
+                arr[j + 1] = arr[j]
+            else:
+                arr[j + 1] = key
+                break
+        else:
+            # Executed if the inner loop completes without breaking (key is the smallest)
+            arr[0] = key
     return arr
-numbers = [564,323,24,646,7,37,9]
+numbers = [564, 323, 24, 646, 7, 37, 9]
 insertion_sort(numbers)
 print(numbers)
 
@@ -24,18 +29,29 @@ Line-by-Line Breakdown
 # key = arr[i]  --> Stores the current element being examined in a variable called key so it is not 
 #                   lost when other elements shift over its position.
 
-# j = i - 1 --> Sets a pointer j to the index immediately to the left of key 
-#               (the end of the already-sorted portion).
+# for j in range(i - 1, -1, -1)	--> This inner loop walks backward through the already sorted left side of the 
+# 									list. It starts right before i (i - 1) and steps down by -1 
+# 									until it reaches 0.
 
-# while j >= 0 and key < arr[j] --> Starts an inner loop that runs as long as j has not passed the 
-#                                   start of the list (j >= 0) and key is smaller than the element at arr[j].
+# if arr[j] > key	--> This checks if the sorted number on the left is larger than our key
 
-# arr[j + 1] = arr[j]   --> Shifts the larger element at arr[j] one position to the right 
-#                           (j + 1) to make room for key.
+# arr[j + 1] = arr[j]   --> If the left number is larger, it copies that number one spot to the right. 
+# 							This makes room for key to move further left.
 
-# j -= 1    --> Moves the pointer j one step to the left to check the next previous element in the sorted portion
+# arr[j + 1] = key  --> Because the left number is smaller, key belongs immediately to its right.
+# 						This line places key into that open spot.
 
-# arr[j + 1] = key  --> Places key into the empty spot left behind once the while loop stops.
+# break	--> Once key is placed, there is no need to check the rest of the sorted list. 
+# 			This immediately exits the inner loop.
+
+# else	--> (aligned with the inner for loop) In Python, an else attached to a for loop only runs if 
+# 			the loop finishes normally without hitting a break. This happens when key is smaller than 
+# 			every single number to its left.
+
+# arr[0]	--> key Since key is the smallest number checked so far, it gets placed at the very front of 
+# 			 	the list at index 0.
+
+# return arr 	--> After the outer loop finishes checking every item, this returns the fully sorted list.
 """
 
 """
